@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <style>
+        .container{
+            width: fit-content;  
+            height: auto; 
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: black;
+            border-radius: 25px;
+        }
+        .display{
+            font-size: 30px;
+            /* padding: 10px; */
+            padding-top: 10px;
+            padding-bottom: 0px;
+            padding-right: 20px;
+            margin-top:30px;
+            margin-right: 20px;
+            background-color: black;
+            color: black;
+            box-shadow: 2px 2px white ;
+            border-radius: 25px;
+            background-color: white;
+            border-width: 20px;
+            width: auto ;
+            text-align: right;
+            height: 70px;
+        }
+
+        .disp1{
+            opacity: .4;
+            font-size: 20px;
+            height: 20px;
+            /* margin: 5px; */
+             /* padding: 10px 0px; */
+        }
+
+        .disp2{
+            /* padding : 10px 0px;  */
+            padding-top: 15px;
+        }
+        /* .answer{
+            border-width: 20px;
+            width: 400px;
+            background-color: white;
+            color: black;
+        } */
+        .allnumbers:hover{
+            background-color: white;
+            color: black;
+        }
+        .alloperators:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .button{
+            font-size: 30px;
+            padding: 5px 30px;
+            margin-top:30px;
+            margin-right: 20px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px white ;
+            border-radius: 25px;
+            display: inline;
+        }
+
+        .data{
+            margin-top: 30px;  
+            /* display: inline; */
+        }
+        
+        .inlin{
+            margin-top : 20px;
+            /* margin-bottom: 30px; */
+            /* margin-bottom: 30px; */
+            /* display: inline; */
+            /* padding: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <!-- <input type="text" class="answer"> -->
+        <div class="display">
+            <div class="disp1">0</div>
+            <div class="disp2">0</div>
+        </div>
+        <!-- <div type="text" class="answer"></div> -->
+        <br>
+        <div class="data">
+            <div class="inlin">
+                <div class="button allnumbers" type="button">1</div>
+                <div class="button allnumbers">2</div>
+                <div class="button allnumbers">3</div>
+                <div class="button alloperators">+</div>
+                <div class="button alloperators">-</div>
+                <!-- <input type="button" value="1"> 
+                <input type="button" value='2'> 
+                <input type="button" value='3'> 
+                <input type="button" value='+'> 
+                <input type="button" value='-'> -->
+            </div> 
+            <br>
+            <div class="inlin">
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='4'>4</div>
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='5'>5</div>
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='6'>6</div>
+                <div class="button alloperators" type="button" onclick="assignedvalue(this)" data-op='*'>*</div>
+                <div class="button alloperators" type="button" onclick="assignedvalue(this)" data-op='/'>/</div>
+                <!-- <input type="button" value='4'> 
+                <input type="button" value='5'> 
+                <input type="button" value='6'>
+                <input type="button" value='*'  style="padding: 5px 33px;"> 
+                <input type="button" value='/'>   -->
+            </div>
+            <br>
+            <div class="inlin">
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='8'>8</div>
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='9'>9</div>
+                <div class="button result" type="button">Result</div>
+                <!-- <input type="button" value='7'> 
+                <input type="button" value='8'> 
+                <input type="button" value='9'>
+                <input type="button" value='Result' style="margin: 0px 15px; font-weight: bold;">  -->
+            </div>
+            <br>
+            <div class="inlin">
+                <div class="allnumbers" type="button" onclick="assignedvalue(this)" data-value='.'>.</div>
+                <div class="allnumbers" type="button" onclick="assignedvalue(this)" data-value='0'>0</div>
+                <!-- <input type="button" value='.' style="padding: 5px 35px;">  
+                <input type="button" value='0'>  -->
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
